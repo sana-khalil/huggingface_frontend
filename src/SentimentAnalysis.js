@@ -54,10 +54,9 @@ function SentimentAnalysisComponent() {
             Input: {output.text}
             </Typography> */}
             <Typography variant="h5" gutterBottom>
-            Sentiment Scores:
                   {output.sentiment[0].map((item, index) => (
                     <li key={index}>
-                      {item.label}: {item.score.toFixed(2)*100}%
+                      {item.label}: {item.score.toFixed(1)*100}%
                     </li>
                   ))}
             </Typography>
